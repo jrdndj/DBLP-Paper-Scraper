@@ -1,10 +1,10 @@
 # DBLP-Paper-Scraper
 A quick python script that lets you scrape the names of a list of authors to help you prepare your CEUR proceedings
 
-You can automate the process of checking the DBLP footprint (publications and academic profiles) of a list of people by using the DBLP API or other tools. Here's how you can approach this:
+You can automate the process of checking the DBLP footprint (publications and academic profiles) of a list of people by using the DBLP API or other tools. 
 
 1. **DBLP API**:
-   DBLP provides an API that can be used to query its database. You can send a request to search for authors by name, and the API will return the list of their publications. This can be automated with a script. Here's a general approach:
+   DBLP provides an API that can be used to query its database. You can send a request to search for authors by name, and the API will return the list of their publications. 
    - You would need to create a script that sends requests to the DBLP API for each person in your list.
    - The API's search endpoint allows you to query for an author's publications using their name.
 
@@ -12,10 +12,10 @@ You can automate the process of checking the DBLP footprint (publications and ac
    ```http
    https://dblp.org/search/publ/api?q=<author_name>&format=bibtex
    ```
-   You can replace `<author_name>` with the name of each person on your list.
+   You can replace `<author_name>` with the name of each person on your list. In this case we use a python script to get it from a txt file containing all author names separated by line breaks. 
 
 
-To automate the process of querying DBLP and getting the number of papers for a list of authors, you can use Python along with its `requests` library to interact with the DBLP API. I'll walk you through the process of setting up this automation.
+To automate the process of querying DBLP and getting the number of papers for a list of authors, you can use Python along with its `requests` library to interact with the DBLP API. 
 
 ### Steps:
 
